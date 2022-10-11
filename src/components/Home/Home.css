@@ -1,0 +1,9 @@
+/* .home-container {} */
+
+.quiz-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    width: 50%;
+    margin: 10px auto;
+}

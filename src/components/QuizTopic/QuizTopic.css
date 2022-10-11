@@ -1,0 +1,33 @@
+.quiz-topic {
+    background-color: #06283D;
+    margin: 20px;
+    width: 200px;
+    padding: 15px;
+    transition: 0.5s ease;
+}
+
+.quiz-topic:hover {
+    background-color: #0d3d5c;
+}
+
+.quiz-topic h2,
+h4 {
+    color: white;
+}
+
+.quiz-topic img {
+    width: 100px;
+    margin-top: 10px;
+}
+
+.btn-test {
+    background-color: #ff4136;
+    border: 0;
+    color: white;
+    border-radius: 5px;
+    line-height: 2;
+    font-size: 16px;
+    padding: 5px 10px;
+    width: 100%;
+    cursor: pointer;
+}
