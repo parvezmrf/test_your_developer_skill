@@ -1,0 +1,28 @@
+.quiz-div {
+    background-color: #ffbe5c;
+    margin: 50px auto;
+    width: 80%;
+    border-radius: 20px;
+
+}
+
+.quiz-question {
+    text-align: left;
+    padding-left: 10%;
+    color: blueviolet;
+    background-color: #ffa927;
+    line-height: 3;
+}
+
+.qus-eye {
+    display: flex;
+    justify-content: space-between;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 60%;
+    margin-left: 25%;
+    padding-bottom: 30px;
+}

@@ -9,7 +9,6 @@ const Quiz = () => {
     console.log(questions)
     return (
         <div>
-            <h2>React Quiz Here</h2>
             {
                 questions.map(question => <Question
                     key={question.id}
