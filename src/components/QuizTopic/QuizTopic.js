@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 
 const QuizTopic = ({ quiztopic }) => {
     const { id, name, logo, total } = quiztopic;
-    console.log(quiztopic)
     return (
         <div className='quiz-topic' >
             <img src={logo} alt="" />

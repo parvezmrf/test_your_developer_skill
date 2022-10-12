@@ -1,22 +1,25 @@
 import React from 'react';
 import './Option.css'
 
-const Option = ({ options }) => {
-    // console.log(correctAnswer)
-    // const handleAns = Answer => {
+const Option = ({ options, correctAnswer }) => {
 
-    //     if (Answer === { options }) {
-    //         alert('correct')
-    //     }
-    //     else {
-    //         alert('wrong')
-    //     }
-    // }
+    const handleAns = Answer => {
+
+        console.log(options)
+        console.log(correctAnswer)
+        if (options === correctAnswer) {
+            alert('Correct Answer')
+        }
+        else {
+            alert('Wrong Answer. Press eye button to know')
+        }
+
+    }
 
 
     return (
         <div className='all-option'>
-            <li className='ppp' >{options}</li>
+            <li onClick={() => handleAns()} className='ppp' >{options}</li>
         </div>
     );
 };

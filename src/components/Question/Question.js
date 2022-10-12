@@ -9,7 +9,7 @@ const Question = ({ questions }) => {
     // console.log(questions)
     // console.log(questions.correctAnswer)
     // console.log(questions.options)
-    const allOpt = questions.options;
+    // const allOpt = questions.options;
     const corrOpt = questions.correctAnswer;
 
 
@@ -20,10 +20,10 @@ const Question = ({ questions }) => {
     }
 
 
-    console.log(allOpt, corrOpt)
+    // console.log(allOpt, corrOpt)
 
     const { question, correctAnswer, options } = questions;
-    console.log(correctAnswer)
+    // console.log(correctAnswer)
     const notify = () => toast(`Correct Ans:    ${correctAnswer}`);
 
     return (
