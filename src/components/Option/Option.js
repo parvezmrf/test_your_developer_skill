@@ -1,7 +1,7 @@
 import React from 'react';
 import './Option.css'
 
-const Option = ({ options, ansC, correctAnswer }) => {
+const Option = ({ options }) => {
     // console.log(correctAnswer)
     // const handleAns = Answer => {
 
@@ -14,10 +14,9 @@ const Option = ({ options, ansC, correctAnswer }) => {
     // }
 
 
-
     return (
         <div className='all-option'>
-            <li onClick={() => ansC(correctAnswer)} className='ppp' >{options}</li>
+            <li className='ppp' >{options}</li>
         </div>
     );
 };

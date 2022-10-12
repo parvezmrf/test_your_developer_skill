@@ -2,8 +2,13 @@ import React from 'react';
 import Option from '../Option/Option';
 import './Question.css';
 import { EyeIcon } from '@heroicons/react/24/solid';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Question = ({ questions }) => {
+
+
+
     // console.log(questions)
     // console.log(questions.correctAnswer)
     // console.log(questions.options)
@@ -13,16 +18,7 @@ const Question = ({ questions }) => {
 
     function ansC(crr) {
 
-
-        // console.log('crr ans', corrOpt)
-        // console.log(anss)
-
-        if (crr === corrOpt) {
-            console.log('bal', corrOpt)
-        }
-        else {
-            console.log('wrong')
-        }
+        console.log(corrOpt, crr)
 
     }
 
@@ -31,14 +27,22 @@ const Question = ({ questions }) => {
 
     const { question, correctAnswer, options } = questions;
     console.log(correctAnswer)
+    const notify = () => toast(`Correct Ans:    ${correctAnswer}`);
+
     return (
         <div className='quiz-div' >
             <div className='qus-eye' >
                 <h2 className='quiz-question'>{question.replace(/(<([^>]+)>)/ig, '')}</h2>
                 <div>
-                    <p className="eye"><pre>    </pre><EyeIcon /></p>
+
+                    <div>
+                        <button className='eye' onClick={notify}><small>Ans</small><EyeIcon /></button>
+                        <ToastContainer />
+                    </div>
                 </div>
             </div>
+
+
             <div className='options'>
                 {
                     options.map(option => <Option
