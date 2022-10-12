@@ -46,3 +46,14 @@ h4 {
 .btn-test:hover {
     background-color: #ff2216;
 }
+
+@media only screen and (max-width: 768px) {
+    .quiz-topic {
+        border-radius: 10px;
+        margin: 10px;
+        width: 80%;
+        padding: 15px;
+
+    }
+
+}

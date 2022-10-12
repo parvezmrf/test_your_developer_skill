@@ -26,3 +26,17 @@
 .navbar img {
     width: 80px;
 }
+
+@media only screen and (max-width: 768px) {
+    .nav-link a {
+        display: block;
+    }
+
+    .navbar {
+        display: block;
+        padding: 0;
+
+    }
+
+
+}
