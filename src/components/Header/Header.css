@@ -8,10 +8,8 @@
 }
 
 .nav-link a:hover {
-    background-color: #393E46;
+    background-color: #040405;
     border-radius: 10px;
-    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 5px;
-
 
 }
 
@@ -26,6 +24,11 @@
 .navbar img {
     width: 80px;
 }
+
+.active {
+    background-color: #040405;
+}
+
 
 @media only screen and (max-width: 768px) {
     .nav-link a {

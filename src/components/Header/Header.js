@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Header.css';
 import navimg from '../../img/header.png'
 
@@ -8,9 +8,9 @@ const Header = () => {
         <div className='navbar' >
             <img src={navimg} alt="" />
             <nav className='nav-link' >
-                <Link to='/'>Home</Link>
-                <Link to='/chart'>Statistics</Link>
-                <Link to='/blog'>Blog</Link>
+                <NavLink className={({ isActive }) => isActive ? 'active' : undefined} to='/'>Home</NavLink>
+                <NavLink className={({ isActive }) => isActive ? 'active' : undefined} to='/chart'>Statistics</NavLink>
+                <NavLink className={({ isActive }) => isActive ? 'active' : undefined} to='/blog'>Blog</NavLink>
             </nav>
         </div>
     );
