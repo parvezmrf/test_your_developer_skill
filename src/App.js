@@ -3,6 +3,7 @@ import './App.css';
 import Blog from './components/Blog/Blog';
 import Chart from './components/Chart/Chart';
 import Home from './components/Home/Home';
+import NotFound from './components/NotFound/NotFound';
 import Quiz from './components/Quiz/Quiz';
 import Main from './layout/Main';
 
@@ -36,7 +37,7 @@ function App() {
         },
         {
           path: '*',
-          element: <p>404 Not Found</p>
+          element: <NotFound></NotFound>
 
         }
 
