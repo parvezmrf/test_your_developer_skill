@@ -6,9 +6,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Question = ({ questions }) => {
-
-
-
     // console.log(questions)
     // console.log(questions.correctAnswer)
     // console.log(questions.options)
