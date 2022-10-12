@@ -17,4 +17,4 @@ In the project directory, you can run:
 ### You can learn and find the correct ans.
 
 ## Live link
-https://parvezmrf-assignment9.netlify.app/quiz/1
+https://parvezmrf-assignment9.netlify.app
