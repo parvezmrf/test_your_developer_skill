@@ -18,11 +18,12 @@ function App() {
           element: <Home></Home>
         },
         {
-          path: 'chart',
+          path: '/chart',
+          loader: async () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Chart></Chart>
         },
         {
-          path: 'blog',
+          path: '/blog',
           element: <Blog></Blog>
         },
         {
